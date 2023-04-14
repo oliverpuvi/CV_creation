@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>NLP assistant research position</h1>
+        <a href="index.html" style="color: black;"><p class="edu-title">Back </p></a>
+    </div>
+
+
+
+	<div class="section">
+        <ul>
+            <h1>About the work</h1>
+            <br>
+            <p>The aim of the research is to develop a model 
+                that is viable in detecting named entities in medical texts. 
+                Although this has been done before and we can train modern models (e.g. BERT) fairly easily, then the issue lies in the language on which we are trying to apply these models. 
+                Estonian is a low resource language and as such, it is first of all difficult to find enough data to train the models, and it is difficult to synthesize for the same reason as well. 
+                However, just because there is not enough data in Estonian does not mean that we would be without any hope, as it is possible to use cross-lingual models for our purpose.
+                For this reason we have been using <a href=" https://huggingface.co/xlm-roberta-base">xlm-roberta-base</a> model as the starting point and fine-tuned it on Harvard's <a href="https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/">n2c2 datasets</a>.
+                First, we are then trying this model on Estonian data (cannot be shared) to look into its results without even training on any data in Estonian and then add Estonian training data on top of that. The current results show a 2.5% growth in accuracy as compared to merely training in Estonian.
+            </p>
+        </ul>
+    </div>
+    <div class="section">
+        <ul>
+            <h1>My contribution</h1>
+            <br>
+            <p> Although most of the work that we have done with regards to this project has been done in conversation with the other stakeholders, then there are certain aspects of the project that I can pinpoint as my contribution.
+                First of all, all the preprocessing of the files has been done by me.
+                In this process I mainly used pandas and python's built-in regex package (re).
+                For the project it was necessary to have texts that have in-line annotations, which in the case of n2c2 meant that it was necessary to join two files for each text - the .ann file and its corresponding .txt file.
+                <br>
+                <br>
+                Further I started experimenting with xlm-roberta model and applied it in the most basic way to the text files. The way to calculate metrics and its optimization was done together with the head researcher.
+                <br>
+                <br>
+                In addition I built a large scale function that can take in-line annotated text files for train, test and validation, fine-tune the pre-trained model and then return the scores.
+                This makes it easier to see what combinations work (e.g English to Estonian, English and Estonian on English etc.). 
+                <br>
+                <br>
+                Some, but not all of my work can be found <a href="https://github.com/oliverpuvi/XLM_roberta-base-familiarisation">here</a>.
+
+            </p>
+        </ul>
+    </div>
+    
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #123100;
+    text-align: left !important;
+  }
+  
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+
+  p {
+    line-height: 1.5;
+    color: black;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    color: "black"
+  }
+  
+  li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: "black"
+  }
+  
+  .section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .section h2 {
+    color: #333;
+  }
+  
+  .section ul {
+    margin-left: 0;
+    color: "black"
+  }
+  
+  .section ul li:before {
+    content: "\2022";
+    color: #333;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .section p {
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .skillset {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    list-style-type: none;
+  }
+  
+  .skillset p {
+    background-color: #ddd;
+    color: #333;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .skillset li:first-child {
+    margin-left: 0;
+  }
+  
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  .contact div {
+    margin-right: 10px;
+  }
+  
+  .contact div a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .education {
+    font-size: 18px;
+  }
+  
+  .date {
+    font-size: 12px;
+  }
+
+  .section ul li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+    margin-left: 3em;
+  }
+  
+  .edu-title:before {
+    content: "\2022";
+    color: #333;
+    display: inline-block;
+    width: 1em;
+  }
+  
+  
